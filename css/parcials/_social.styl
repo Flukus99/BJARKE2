@@ -1,10 +1,9 @@
 .redes{
     height: 200px;
-    display: flex;
+    display:grid;
+    grid-template-rows: 80px 1fr;
     justify-content: center;
-    align-items: center;
-    padding: 50px;
-    background: black;
+    background-color:$colorSection;
 }
 .redes a{
   margin: 30px;
@@ -12,4 +11,13 @@
 }
 .redes i{
   font-size: 105px;
+  color: white;
+  &:hover{
+  	color:$colorhover;
+  }
+}
+.redes h3{
+  text-align: center;
+  color: white;
+  
 }

@@ -1,51 +1,48 @@
-.imagenes{
-background-color:black;
-display: grid;
-grid-template-columns: 1fr 1fr 1fr 1fr;
-
-
+.hoverLoad{
+    height:300vh;
+    width: 100vw;
+    background-color :rgba(3, 3, 3, 0.9);
+    position: fixed;
+    z-index:3;
+    text-align: center;
+    display: none;
+    
+}
+.hoveractive{
+    display: block;
+}
+.hoverLoad img{
+  height: 500px;
+  width: 500px;
+  position: fixed;
+  top: 100px;
+  right: 450px;
+  border-radius: 6px;
+  display: none;
 
 }
-.imagenes img{
-  max-width:300px;
-  height: 300px;
-  border-radius: 50%;
-  object-fit: cover;
-  cursor: pointer;
-  transition: .5s;
+.isactiveimg{
+    display: block !important;
 }
 
-
-footer{
-  background-color: black;
+.hoverLoad i{
+    color: white;
+    position: fixed;
+    left: 965px;
+    top: 81px;
+    font-size: 22px;
+    cursor: pointer;
+    display: none;
 }
 
-@media (max-width: 950px) {
-.imagenes{
-  grid-template-columns: 1fr 1fr 1fr;
-
-}
-
-
-}
-@media (max-width: 875px){
-  .imagenes{
-    grid-template-columns: 1fr 1fr;
-text-align: center;
-
-  }
-
-}
-@media (max-width:650px) {
-  .imagenes img{
-    max-width: 200px;
-    height: 200px;
-
-  }
-}
-@media (max-width:480px){
-  .imagenes img{
-    max-width: 150px;
-    height: 150px;
-  }
+.fotos{
+    background-color: $colorSection;
+    & img{
+        height: 300px;
+        width: 300px;
+        cursor: pointer;
+        &:hover{
+            opacity: .5;
+        }
+    }
 }
