@@ -28,7 +28,7 @@
 .hoverLoad i{
     color: white;
     position: fixed;
-    left: 965px;
+    left: 70%;
     top: 81px;
     font-size: 22px;
     cursor: pointer;
@@ -45,4 +45,45 @@
             opacity: .5;
         }
     }
+}
+
+
+
+
+
+@media (max-width :1210px){
+     .hoverLoad img{
+        height: 50vw;
+        width: 50vw;
+        position: fixed;
+        top: 25vh;
+        right: 25vw;
+        border-radius: 6px;
+        display: none;
+
+                    }
+
+     .hoverLoad i{
+    color: white;
+    position: fixed;
+    right:10vw;
+    top: 20vh;
+    font-size: 15px;
+    cursor: pointer;
+    display: none;
+                }               
+}
+@media (max-width:580px){
+ .hoverLoad img{
+    height: 75vw;
+    width: 75vw;
+    position: fixed;
+    top: 25vh;
+    right: 13vw;
+    border-radius: 6px;
+    display: none;
+ }
+ .hoverLoad i{
+    right: -12vw;
+ }
 }

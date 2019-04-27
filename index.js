@@ -1,16 +1,16 @@
 const icon=document.querySelector(".icon-menu");
 const menu=document.querySelector(".menu-colapse");
-const hoverload=document.querySelector(".hoverload");
+
 icon.addEventListener("click",poner);
 function poner() {
   if (menu.classList.contains("is-active")) {
     menu.classList.remove("is-active");
-    hoverload.classList.remove("hoverload-active");
+  
   }
   else {
 
     menu.classList.add("is-active")
-    hoverload.classList.add("hoverload-active");
+   
   }
 }
 
@@ -26,6 +26,13 @@ const $imageactive1=document.querySelector(".hover-imagen1");//LLAMADO DE LA IMA
 const $imagen2=document.getElementById("imagen2");//LLAMADO DE LA IMAGEN 2
 const $imageactive2=document.querySelector(".hover-imagen2"); //LLAMADO DE LA IMAGEN DEL HOVER 2
 const $icon_close=document.querySelector(".icon-cross"); // LLAMADO DEL ICONO
+const $imagen3=document.getElementById("imagen3");//LLAMADO DE LA IMAGEN 3
+const $imageactive3=document.querySelector(".hover-imagen3");//LLAMANDO LA IMAGEN DEL HOVER 3
+
+$imagen3.addEventListener("click",()=>{
+  activar($imageactive3);
+  solucion($imageactive3);
+})
 
 $imagen1.addEventListener("click",()=>{
   activar($imageactive1);
